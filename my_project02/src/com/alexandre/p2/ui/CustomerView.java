@@ -137,9 +137,7 @@ public class CustomerView {
 
         Customer newCust = new Customer(name, gender, age, phone, email);
 
-        customerList.replaceCustomer(number - 1, newCust);
-
-        boolean isRepalaced = customerList.addCustomer(cust);
+        boolean isRepalaced = customerList.replaceCustomer(number - 1, newCust);
         if (isRepalaced) {
             System.out.println("---------------------------修改完成---------------------------");
         } else {
